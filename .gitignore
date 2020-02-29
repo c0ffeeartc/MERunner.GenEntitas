@@ -1,0 +1,15 @@
+.DS_Store
+
+.idea/
+*.swp
+*.DotSettings*
+*.meta
+
+obj/
+bin/
+
+/GenEntitasUnity/
+
+/packages/*
+!packages/repositories.config
+!packages/MSBuild-mono/
