@@ -22,10 +22,6 @@ public sealed class Factory_SettingsSetCoreSettingsSystem : TSystem_Factory<Sett
 			_contexts			= contexts;
 		}
 
-		public				SettingsSetCoreSettingsSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )

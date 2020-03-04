@@ -23,10 +23,6 @@ public sealed class Factory_GenEntityIndexSystem : TSystem_Factory<GenEntityInde
 			_contexts			= contexts;
 		}
 
-		public				GenEntityIndexSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private const		String					CLASS_TEMPLATE			=
 @"public partial class Contexts {

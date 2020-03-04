@@ -16,10 +16,6 @@ public sealed class Factory_PostProcAddFileHeaderSystem : TSystem_Factory<PostPr
 	[Guid("93E843A5-D1F0-4F8E-825C-D5627635ADF7")]
 	public class PostProcAddFileHeaderSystem : ReactiveSystem<Ent>
 	{
-		public				PostProcAddFileHeaderSystem				(  ) : this( Hub.Contexts )
-		{
-		}
-
 		public				PostProcAddFileHeaderSystem				( Contexts contexts ) : base( contexts.Get<Main>() )
 		{
 		}

@@ -21,10 +21,6 @@ public sealed class Factory_GenEntitySystem : TSystem_Factory<GenEntitySystem> {
 			_contexts			= contexts;
 		}
 
-		public				GenEntitySystem			(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private const		String					TEMPLATE				=
 @"public sealed partial class ${EntityType} : Entitas.Entity {

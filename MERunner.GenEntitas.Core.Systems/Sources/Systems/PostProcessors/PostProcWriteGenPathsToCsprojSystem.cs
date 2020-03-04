@@ -27,10 +27,6 @@ public sealed class Factory_PostProcWriteGenPathsToCsprojSystem : TSystem_Factor
 					Matcher<Main,Destroy>.I ) );
 		}
 
-		public		PostProcWriteGenPathsToCsprojSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private				IGroup<Entity<Main>>	_generatedGroup;
 		private				String					_generatePath;

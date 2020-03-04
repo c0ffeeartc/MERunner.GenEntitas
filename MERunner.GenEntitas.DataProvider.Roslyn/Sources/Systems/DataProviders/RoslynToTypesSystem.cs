@@ -32,10 +32,6 @@ public sealed class Factory_RoslynToTypesSystem : TSystem_Factory<RoslynToTypesS
 			_contexts			= contexts;
 		}
 
-		public				RoslynToTypesSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )

@@ -22,10 +22,6 @@ public sealed class Factory_GenContextEventSystemsSystem : TSystem_Factory<GenCo
 			_contexts			= contexts;
 		}
 
-		public		GenContextEventSystemsSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private const		String					TEMPLATE				=
 @"public sealed class ${ContextName}EventSystems : Feature {

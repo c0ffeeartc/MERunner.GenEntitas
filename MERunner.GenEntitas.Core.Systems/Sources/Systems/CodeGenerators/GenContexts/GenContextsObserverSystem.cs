@@ -22,10 +22,6 @@ public sealed class Factory_GenContextsObserverSystem : TSystem_Factory<GenConte
 			_contexts			= contexts;
 		}
 
-		public				GenContextsObserverSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private const		String					CONTEXTS_TEMPLATE		=
 @"public partial class Contexts {

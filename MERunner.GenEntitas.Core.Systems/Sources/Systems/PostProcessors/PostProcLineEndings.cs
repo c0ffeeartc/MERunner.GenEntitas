@@ -19,10 +19,6 @@ public sealed class Factory_PostProcLineEndings : TSystem_Factory<PostProcLineEn
 		{
 		}
 
-		public				PostProcLineEndings		(  ) : this( Hub.Contexts )
-		{
-		}
-
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
 			return context.CreateCollector( Matcher_<Main,GeneratedFileComp>.I );

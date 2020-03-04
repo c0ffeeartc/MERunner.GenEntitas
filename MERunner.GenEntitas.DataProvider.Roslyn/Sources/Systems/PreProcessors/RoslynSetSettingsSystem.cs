@@ -21,10 +21,6 @@ public sealed class Factory_RoslynSetSettingsSystem : TSystem_Factory<RoslynSetS
 			_contexts			= contexts;
 		}
 
-		public				RoslynSetSettingsSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )

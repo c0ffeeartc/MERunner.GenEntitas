@@ -24,10 +24,6 @@ public sealed class Factory_PostProcApplyDiffToDiskSystem : TSystem_Factory<Post
 			_contexts			= contexts;
 		}
 
-		public				PostProcApplyDiffToDiskSystem					(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private				String					_generatePath;
 		private				Boolean					_isDryRun;

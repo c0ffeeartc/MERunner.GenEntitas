@@ -23,10 +23,6 @@ public sealed class Factory_GenCompEntityApiSystem : TSystem_Factory<GenCompEnti
 			_contexts = contexts;
 		}
 
-		public				GenCompEntityApiSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
         private const		String					STANDARD_TEMPLATE		=

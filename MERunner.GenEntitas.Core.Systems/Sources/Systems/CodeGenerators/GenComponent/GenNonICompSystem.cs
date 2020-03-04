@@ -21,10 +21,6 @@ public sealed class Factory_GenNonICompSystem : TSystem_Factory<GenNonICompSyste
 			_contexts			= contexts;
 		}
 
-		public				GenNonICompSystem		(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private const		String					COMPONENT_TEMPLATE		=
 @"[Entitas.CodeGeneration.Attributes.DontGenerate(false)]

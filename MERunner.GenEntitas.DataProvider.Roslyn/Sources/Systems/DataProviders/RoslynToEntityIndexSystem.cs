@@ -25,10 +25,6 @@ public sealed class Factory_RoslynToEntityIndexSystem : TSystem_Factory<RoslynTo
 			_contexts			= contexts;
 		}
 
-		public				RoslynToEntityIndexSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )

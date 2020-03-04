@@ -21,10 +21,6 @@ public sealed class Factory_GenEventListenerInterfaceSystem : TSystem_Factory<Ge
 			_contexts			= contexts;
 		}
 
-		public		GenEventListenerInterfaceSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		private const		String					TEMPLATE				=

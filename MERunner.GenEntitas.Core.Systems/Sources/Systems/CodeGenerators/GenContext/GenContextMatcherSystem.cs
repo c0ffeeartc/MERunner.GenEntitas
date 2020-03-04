@@ -21,10 +21,6 @@ public sealed class Factory_GenContextMatcherSystem : TSystem_Factory<GenContext
 			_contexts			= contexts;
 		}
 
-		public				GenContextMatcherSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts			_contexts;
 		private const		String				TEMPLATE					=
 @"public sealed partial class ${MatcherType} {

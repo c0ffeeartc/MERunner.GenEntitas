@@ -22,10 +22,6 @@ public sealed class Factory_GenEventListenerCompSystem : TSystem_Factory<GenEven
 			_contexts			= contexts;
 		}
 
-		public			GenEventListenerCompSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private const		String					TEMPLATE				=
 @"[Entitas.CodeGeneration.Attributes.DontGenerate(false)]

@@ -21,10 +21,6 @@ public sealed class Factory_GenContextAttributeSystem : TSystem_Factory<GenConte
 			_contexts			= contexts;
 		}
 
-		public			GenContextAttributeSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private const		String					TEMPLATE				=
 @"public sealed class ${ContextName}Attribute : Entitas.CodeGeneration.Attributes.ContextAttribute {

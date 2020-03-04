@@ -22,10 +22,6 @@ public sealed class Factory_GenCompLookupSystem : TSystem_Factory<GenCompLookupS
 			_contexts = contexts;
 		}
 
-		public				GenCompLookupSystem		(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		private const		String					TEMPLATE				=

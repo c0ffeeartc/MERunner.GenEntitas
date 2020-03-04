@@ -19,10 +19,6 @@ public sealed class Factory_PostProcMergeFilesSystem : TSystem_Factory<PostProcM
 		{
 		}
 
-		public				PostProcMergeFilesSystem(  ) : this( Hub.Contexts )
-		{
-		}
-
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
 			return context.CreateCollector( Matcher_<Main,GeneratedFileComp>.I );

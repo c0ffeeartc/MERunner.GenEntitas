@@ -20,10 +20,6 @@ public sealed class Factory_GenFeatureClassSystem : TSystem_Factory<GenFeatureCl
 			_contexts			= contexts;
 		}
 
-		public				GenFeatureClassSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
         private const		String					FEATURE_TEMPLATE		=
 @"#if (!ENTITAS_DISABLE_VISUAL_DEBUGGING && UNITY_EDITOR)

@@ -24,10 +24,6 @@ public sealed class Factory_GenEventSystemSystem : TSystem_Factory<GenEventSyste
 			_contexts			= contexts;
 		}
 
-		public				GenEventSystemSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 		private const		String					TEMPLATE_ANY			=
             @"public sealed class ${Event}EventSystem : Entitas.ReactiveSystem<${EntityType}> {

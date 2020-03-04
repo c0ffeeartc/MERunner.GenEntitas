@@ -21,10 +21,6 @@ public sealed class Factory_GenEventEntityApiSystem : TSystem_Factory<GenEventEn
 			_contexts			= contexts;
 		}
 
-		public				GenEventEntityApiSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
         private const		String					TEMPLATE				=

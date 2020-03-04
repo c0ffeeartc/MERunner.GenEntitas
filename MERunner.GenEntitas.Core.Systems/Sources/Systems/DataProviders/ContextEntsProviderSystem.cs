@@ -20,10 +20,6 @@ public sealed class Factory_ContextEntsProviderSystem : TSystem_Factory<ContextE
 			_contexts			= contexts;
 		}
 
-		public				ContextEntsProviderSystem(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )

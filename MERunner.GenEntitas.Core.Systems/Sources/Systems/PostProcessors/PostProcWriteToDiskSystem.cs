@@ -22,10 +22,6 @@ public sealed class Factory_PostProcWriteToDiskSystem : TSystem_Factory<PostProc
 			_contexts			= contexts;
 		}
 
-		public				PostProcWriteToDiskSystem(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )

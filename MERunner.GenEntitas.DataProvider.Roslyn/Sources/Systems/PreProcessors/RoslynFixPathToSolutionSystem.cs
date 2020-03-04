@@ -22,10 +22,6 @@ public sealed class Factory_RoslynFixPathToSolutionSystem : TSystem_Factory<Rosl
 		{
 		}
 
-		public				RoslynFixPathToSolutionSystem					(  ) : this( Hub.Contexts )
-		{
-		}
-
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
 			return context.CreateCollector( Matcher_<Settings,RoslynPathToSolution>.I );

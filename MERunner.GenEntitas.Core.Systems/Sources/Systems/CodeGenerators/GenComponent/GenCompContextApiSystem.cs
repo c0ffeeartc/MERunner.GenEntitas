@@ -21,10 +21,6 @@ public sealed class Factory_GenCompContextApiSystem : TSystem_Factory<GenCompCon
 			_contexts = contexts;
 		}
 
-		public				GenCompContextApiSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		private const		String					STANDARD_TEMPLATE		=

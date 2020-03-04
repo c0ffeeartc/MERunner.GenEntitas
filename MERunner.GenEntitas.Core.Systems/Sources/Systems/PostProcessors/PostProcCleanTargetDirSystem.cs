@@ -21,10 +21,6 @@ public sealed class Factory_PostProcCleanTargetDirSystem : TSystem_Factory<PostP
 			_contexts			= contexts;
 		}
 
-		public		PostProcCleanTargetDirSystem	(  ) : this( Hub.Contexts )
-		{
-		}
-
 		private				Contexts				_contexts;
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
