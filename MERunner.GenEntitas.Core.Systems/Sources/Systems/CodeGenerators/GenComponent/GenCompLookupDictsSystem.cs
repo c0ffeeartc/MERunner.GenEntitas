@@ -40,7 +40,7 @@ ${kTypeVIndexList}
 		{
 			return context.CreateCollector( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,Comp>.I )
+					Matcher<Main,Comp>.I )
 				.NoneOf(
 					Matcher<Main,DontGenerateComp>.I ) );
 		}

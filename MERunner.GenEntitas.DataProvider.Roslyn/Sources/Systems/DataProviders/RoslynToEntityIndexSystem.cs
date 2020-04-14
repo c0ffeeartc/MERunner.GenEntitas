@@ -29,7 +29,7 @@ public sealed class Factory_RoslynToEntityIndexSystem : TSystem_Factory<RoslynTo
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher_<Main,RoslynAllTypes>.I );
+			return context.CreateCollector( Matcher<Main,RoslynAllTypes>.I );
 		}
 
 		protected override	Boolean					Filter					( Ent entity )
@@ -54,8 +54,8 @@ public sealed class Factory_RoslynToEntityIndexSystem : TSystem_Factory<RoslynTo
 
 			var compEnts				= _contexts.Get<Main>().GetGroup( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,Comp>.I,
-					Matcher_<Main,PublicFieldsComp>.I ) )
+					Matcher<Main,Comp>.I,
+					Matcher<Main,PublicFieldsComp>.I ) )
 				.GetEntities(  );
 
 			foreach( var ent in compEnts )

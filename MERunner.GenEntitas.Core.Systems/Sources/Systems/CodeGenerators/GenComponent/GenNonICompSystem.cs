@@ -33,7 +33,7 @@ public sealed class ${FullComponentName} : Entitas.IComponent {
 		{
 			return context.CreateCollector( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,NonIComp>.I )
+					Matcher<Main,NonIComp>.I )
 				.NoneOf(
 					Matcher<Main,DontGenerateComp>.I ) );
 		}

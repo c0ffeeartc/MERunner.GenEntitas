@@ -26,7 +26,7 @@ public sealed class Factory_ContextEntsProviderSystem : TSystem_Factory<ContextE
 		{
 			return context.CreateCollector( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,ContextNamesComp>.I )
+					Matcher<Main,ContextNamesComp>.I )
 				.NoneOf(
 					Matcher<Main,DontGenerateComp>.I ) );
 		}

@@ -29,7 +29,7 @@ public sealed class Factory_RoslynToCompsSystem : TSystem_Factory<RoslynToCompsS
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher_<Main,RoslynComponentTypes>.I );
+			return context.CreateCollector( Matcher<Main,RoslynComponentTypes>.I );
 		}
 
 		protected override	Boolean					Filter					( Ent ent )

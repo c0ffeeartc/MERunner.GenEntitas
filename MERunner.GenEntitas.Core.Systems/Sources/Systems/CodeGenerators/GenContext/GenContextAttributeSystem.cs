@@ -31,7 +31,7 @@ public sealed class Factory_GenContextAttributeSystem : TSystem_Factory<GenConte
 ";
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher_<Main,ContextComp>.I );
+			return context.CreateCollector( Matcher<Main,ContextComp>.I );
 		}
 
 		protected override	Boolean					Filter					( Ent entity )

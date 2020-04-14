@@ -26,7 +26,7 @@ public sealed class Factory_SettingsSetCoreSettingsSystem : TSystem_Factory<Sett
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher<Ent>.AllOf( Matcher_<Settings,SettingsDict>.I ) );
+			return context.CreateCollector( Matcher<Ent>.AllOf( Matcher<Settings,SettingsDict>.I ) );
 		}
 
 		protected override	Boolean					Filter					( Ent entity )

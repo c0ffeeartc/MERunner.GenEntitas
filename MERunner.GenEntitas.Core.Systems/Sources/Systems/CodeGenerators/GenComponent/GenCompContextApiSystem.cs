@@ -80,7 +80,7 @@ public sealed class Factory_GenCompContextApiSystem : TSystem_Factory<GenCompCon
 		{
 			return context.CreateCollector( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,Comp>.I,
+					Matcher<Main,Comp>.I,
 					Matcher<Main,UniqueComp>.I )
 				.NoneOf(
 					Matcher<Main,DontGenerateComp>.I ) );

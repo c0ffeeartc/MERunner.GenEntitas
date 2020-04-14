@@ -25,7 +25,7 @@ public sealed class Factory_RoslynSetSettingsSystem : TSystem_Factory<RoslynSetS
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher_<Settings,SettingsDict>.I );
+			return context.CreateCollector( Matcher<Settings,SettingsDict>.I );
 		}
 
 		protected override	Boolean					Filter					( Ent entity )

@@ -99,8 +99,8 @@ public sealed class Factory_GenEventSystemSystem : TSystem_Factory<GenEventSyste
 		{
 			return context.CreateCollector( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,Comp>.I,
-					Matcher_<Main,EventComp>.I ) );
+					Matcher<Main,Comp>.I,
+					Matcher<Main,EventComp>.I ) );
 		}
 
 		protected override	Boolean					Filter					( Ent entity )

@@ -22,7 +22,7 @@ public sealed class Factory_PostProcWriteGenPathsToCsprojSystem : TSystem_Factor
 			_contexts			= contexts;
 			_generatedGroup		= contexts.Get<Main>().GetGroup( Matcher<Entity<Main>>
 				.AllOf(
-					Matcher_<Main,GeneratedFileComp>.I )
+					Matcher<Main,GeneratedFileComp>.I )
 				.NoneOf(
 					Matcher<Main,Destroy>.I ) );
 		}
@@ -33,7 +33,7 @@ public sealed class Factory_PostProcWriteGenPathsToCsprojSystem : TSystem_Factor
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher_<Settings,WriteGeneratedPathsToCsProj>.I );
+			return context.CreateCollector( Matcher<Settings,WriteGeneratedPathsToCsProj>.I );
 		}
 
 		protected override	Boolean					Filter					( Ent ent )

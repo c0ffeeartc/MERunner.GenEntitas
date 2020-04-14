@@ -71,8 +71,8 @@ ${getIndices}
 		{
 			var entities = _contexts.Get<Main>().GetGroup( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,Comp>.I,
-					Matcher_<Main,PublicFieldsComp>.I ) )
+					Matcher<Main,Comp>.I,
+					Matcher<Main,PublicFieldsComp>.I ) )
 				.GetEntities(  );
 			
 			var entityIndexData = new List<EntityIndexData>(  );
@@ -89,7 +89,7 @@ ${getIndices}
 				}
 			}
 
-			var entsCustomIndex		= _contexts.Get<Main>().GetGroup( Matcher_<Main,CustomEntityIndexComp>.I ).GetEntities(  );
+			var entsCustomIndex		= _contexts.Get<Main>().GetGroup( Matcher<Main,CustomEntityIndexComp>.I ).GetEntities(  );
 			foreach ( var ent in entsCustomIndex )
 			{
 				entityIndexData.Add( ent.Get_<CustomEntityIndexComp>().EntityIndexData );

@@ -47,8 +47,8 @@ public sealed class Factory_GenCompEntityApiInterfaceSystem : TSystem_Factory<Ge
 		{
 			return context.CreateCollector( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,Comp>.I,
-					Matcher_<Main,ContextNamesComp>.I )
+					Matcher<Main,Comp>.I,
+					Matcher<Main,ContextNamesComp>.I )
 				.NoneOf(
 					Matcher<Main,DontGenerateComp>.I ) );
 		}

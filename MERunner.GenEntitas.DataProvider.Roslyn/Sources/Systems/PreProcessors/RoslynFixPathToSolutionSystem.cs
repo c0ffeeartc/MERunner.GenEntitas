@@ -24,7 +24,7 @@ public sealed class Factory_RoslynFixPathToSolutionSystem : TSystem_Factory<Rosl
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher_<Settings,RoslynPathToSolution>.I );
+			return context.CreateCollector( Matcher<Settings,RoslynPathToSolution>.I );
 		}
 
 		protected override	Boolean					Filter					( Ent ent )

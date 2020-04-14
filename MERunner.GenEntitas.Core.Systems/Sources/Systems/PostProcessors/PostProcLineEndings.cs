@@ -21,7 +21,7 @@ public sealed class Factory_PostProcLineEndings : TSystem_Factory<PostProcLineEn
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher_<Main,GeneratedFileComp>.I );
+			return context.CreateCollector( Matcher<Main,GeneratedFileComp>.I );
 		}
 
 		protected override	Boolean					Filter					( Ent entity )

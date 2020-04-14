@@ -36,7 +36,7 @@ public sealed class Factory_RoslynToTypesSystem : TSystem_Factory<RoslynToTypesS
 
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
-			return context.CreateCollector( Matcher_<Settings,RoslynPathToSolution>.I );
+			return context.CreateCollector( Matcher<Settings,RoslynPathToSolution>.I );
 		}
 
 		protected override	Boolean					Filter					( Ent entity )

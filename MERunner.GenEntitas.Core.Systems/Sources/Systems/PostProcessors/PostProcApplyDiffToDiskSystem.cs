@@ -32,7 +32,7 @@ public sealed class Factory_PostProcApplyDiffToDiskSystem : TSystem_Factory<Post
 		{
 			return context.CreateCollector( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,GeneratedFileComp>.I )
+					Matcher<Main,GeneratedFileComp>.I )
 				.NoneOf(
 					Matcher<Main,Destroy>.I ) );
 		}

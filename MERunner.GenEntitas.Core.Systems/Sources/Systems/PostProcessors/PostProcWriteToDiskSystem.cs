@@ -28,7 +28,7 @@ public sealed class Factory_PostProcWriteToDiskSystem : TSystem_Factory<PostProc
 		{
 			return context.CreateCollector( Matcher<Ent>
 				.AllOf(
-					Matcher_<Main,GeneratedFileComp>.I )
+					Matcher<Main,GeneratedFileComp>.I )
 				.NoneOf(
 					Matcher<Main,Destroy>.I ) );
 		}

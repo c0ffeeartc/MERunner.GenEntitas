@@ -33,7 +33,7 @@ ${memberList}
 		protected override	ICollector<Ent>			GetTrigger				( IContext<Ent> context )
 		{
 			return context.CreateCollector( Matcher<Ent>
-				.AllOf( Matcher_<Main,Comp>.I )
+				.AllOf( Matcher<Main,Comp>.I )
 				.NoneOf(
 					Matcher<Main,DontGenerateComp>.I,
 					Matcher<Main,AlreadyImplementedComp>.I,
