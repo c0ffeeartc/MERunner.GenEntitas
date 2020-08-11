@@ -37,6 +37,11 @@ public sealed class Factory_RoslynFixPathToSolutionSystem : TSystem_Factory<Rosl
 		{
 			var ent					= ents[0];
 			var pathToSolution		= ent.Get_<RoslynPathToSolution>().Value;
+			if ( !pathToSolution.EndsWith( ".sln") )  // FIXME: can cause bug_
+			{
+				return;
+			}
+
 			var newPathToSolution	= WorkaroundProjectNames( pathToSolution );
 			if ( pathToSolution != newPathToSolution )
 			{
